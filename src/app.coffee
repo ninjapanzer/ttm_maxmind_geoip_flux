@@ -15,7 +15,6 @@ define [
   dispatcher.register (payload)->
     switch payload.actionType
       when "locale-commited"
-        console.log(payload.actionType)
         verify_locale()
 
   jQuery ->
@@ -30,7 +29,6 @@ define [
       jQuery('.geoswitch--select').chosen()
       jQuery('.geoswitch--accept').on('click', accept_locale)
 
-
   accept_locale = (cookie_path, cookie_domain)->
     $select = jQuery('.geoswitch--select');
     codeAndName = $select.val().split(':');
@@ -38,4 +36,3 @@ define [
       code: codeAndName[0]
       name: codeAndName[1]
     window.location = window.location;
-
