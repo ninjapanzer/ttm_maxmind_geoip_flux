@@ -1,0 +1,16 @@
+{
+  "name": "ttm-www-maxmind",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flux": "~2.0.2"
+  }
+}
