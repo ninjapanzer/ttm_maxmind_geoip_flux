@@ -14,8 +14,6 @@
     "coffee-script": "^1.9.1",
     "jshint": "^2.6.0",
     "jshint-loader": "^0.8.3",
-    "jsx-loader": "^0.12.2",
-    "sass-loader": "^0.4.0",
     "webpack": "^1.6.0",
     "webpack-dev-server": "^1.7.0"
   }
