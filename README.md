@@ -5,4 +5,4 @@
 - `bower install`
 - `npm run build`
 - `npm run dev`
-- `view site on localhost:8080
+- view site on `localhost:8080`
