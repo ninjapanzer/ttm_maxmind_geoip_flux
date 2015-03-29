@@ -6,6 +6,9 @@ This expects that the following jquery libraries are present and on the page bef
 - `jQuery.cookie`
 - `jQuery.chosen`
 
+Additionally the **MaxMind** `Geoip2` library is expected to be loaded previously
+- `geoip2` http://dev.maxmind.com/geoip/
+
 This repo keeps a version of those in the build directory for convienance but its recomended that you resolve these dependencies yourself at script inclusion time.
 
 ### Setup
