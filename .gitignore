@@ -5,3 +5,5 @@ build/*
 !build/index.html
 !build/chosen*
 !build/jquery*
+!build/geoip2*
+
