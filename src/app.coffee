@@ -20,6 +20,7 @@ define [
   jQuery ->
     jQuery.cookie.raw = true
     store.locate()
+    jQuery('.geoswitch--reset').click cookieJar.clearUserSelection
 
   verify_locale = ->
     locale = cookieJar.readLocale()
