@@ -26,8 +26,8 @@ define 'cookiejar',
         actionType: "locale-commited"
         locale: locale
     clearUserSelection: ->
-      jQuery.removeCookie 'geoswitch_locale[code]', { domain: ".#{window.location.hostname}"}
-      jQuery.removeCookie 'geoswitch_locale[name]', { domain: ".#{window.location.hostname}"}
-      jQuery.removeCookie 'geoswitch_locale[user_selected]', { domain: ".#{window.location.hostname}"}
+      jQuery.removeCookie 'geoswitch_locale[code]', { path:"/", domain: ".#{window.location.hostname}" }
+      jQuery.removeCookie 'geoswitch_locale[name]', { path:"/", domain: ".#{window.location.hostname}" }
+      jQuery.removeCookie 'geoswitch_locale[user_selected]', { path:"/", domain: ".#{window.location.hostname}" }
 
   CookieJar
