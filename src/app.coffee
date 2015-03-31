@@ -19,7 +19,6 @@ define [
 
   jQuery ->
     jQuery.cookie.raw = true
-    cookieJar.purgeLegacyCookies()
     store.locate()
     jQuery('.geoswitch--reset').click cookieJar.clearUserSelection
 
