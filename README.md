@@ -12,8 +12,9 @@ Additionally the **MaxMind** `Geoip2` library is expected to be loaded previousl
 This repo keeps a version of those in the build directory for convienance but its recomended that you resolve these dependencies yourself at script inclusion time.
 
 ### Setup
+- edit your `/etc/hosts` file to point `127.0.0.1` -> `localhost.local` This is because cookies require a valid domain and will not work for `localhost`
 - `npm install`
 - `bower install`
-- `npm run build`
+- `npm run build` -> to make sure there are no errors
 - `npm run dev`
-- view site on `localhost:8080`
+- view site on `localhost.local:8080`
