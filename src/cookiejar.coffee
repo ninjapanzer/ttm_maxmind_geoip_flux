@@ -9,6 +9,10 @@ define 'cookiejar',
 )->
   jQuery.cookie.raw = true;
   CookieJar =
+    purgeLegacyCookies: ->
+      jQuery.removeCookie('geoswitch_locale[code]', {domain: "." + window.location.hostname})
+      jQuery.removeCookie('geoswitch_locale[name]', {domain: "." + window.location.hostname})
+      jQuery.removeCookie('geoswitch_locale[user_selected]', {domain: "." + window.location.hostname})
     commitLocale: (locale)->
       jQuery.cookie 'geoswitch_locale[code]', locale.code, { expires: 3000 }
       jQuery.cookie 'geoswitch_locale[name]', locale.name, { expires: 3000 }
